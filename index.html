@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container" id="particles"></div>
+
+    <main class="main-wrapper">
+        <h1 class="main-title">INDEPENDENCE DAY</h1>
+        <div class="bottom-subtitle">IS ON ITS WAY</div>
+        <p class="tagline">Please be patient.</p>
+
+        <div class="countdown-grid">
+            <div class="countdown-box"><span id="days" class="countdown-number">00</span><span class="countdown-label">DAYS</span></div>
+            <div class="countdown-box"><span id="hours" class="countdown-number">00</span><span class="countdown-label">HOURS</span></div>
+            <div class="countdown-box"><span id="minutes" class="countdown-number">00</span><span class="countdown-label">MINUTES</span></div>
+            <div class="countdown-box"><span id="seconds" class="countdown-number">00</span><span class="countdown-label">SECONDS</span></div>
+        </div>
+
+        <div class="status-text" id="statusText">Your surprise is almost ready!</div>
+
+        <div class="gift-wrapper">
+            <div class="gift-box" id="giftBox" role="button" aria-label="Open Gift Box">
+                <div class="gift-lid">
+                    <div class="ribbon-vertical"></div>
+                    <div class="bow"><div class="bow-left"></div><div class="bow-right"></div><div class="bow-knot"></div></div>
+                </div>
+                <div class="gift-body"><div class="ribbon-vertical"></div></div>
+            </div>
+            <div class="toast-container" id="toastContainer">Gift locked until countdown finishes :-)</div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal-backdrop" id="modalBackdrop">
+        <div class="modal-content">
+            <div class="modal-sparkles"> 🎉 </div>
+            <h2>Happy Birthday!</h2>
+            <p>Ready to open your gifts?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn yes-btn" id="yesBtn">Yes</button>
+                <button class="modal-btn no-btn" id="noBtn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
