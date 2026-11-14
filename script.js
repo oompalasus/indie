@@ -89,7 +89,6 @@ yesBtn.addEventListener('click', () => {
     window.location.href = 'parcel.html';
 });
 
-// Desktop Hover & Mobile Tap: No button slides smoothly across a wider range of spaces using transform
 noBtn.addEventListener('mouseenter', () => {
     if (window.matchMedia('(hover: hover)').matches) {
         moveNoButtonWide();
@@ -103,7 +102,6 @@ noBtn.addEventListener('click', (e) => {
 });
 
 function moveNoButtonWide() {
-    // Increased multipliers for a wider reach across the modal box
     const randomX = (Math.random() - 0.5) * 320; 
     const randomY = (Math.random() - 0.5) * 200; 
     noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
