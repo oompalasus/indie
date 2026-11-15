@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Parcel ♡</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="parcel2.css">
+</head>
+<body>
+
+    <!-- STAGE 1: TEAR-STRIP UNBOXING -->
+    <section class="unboxing-stage" id="unboxingStage">
+        <h1 class="stage-title">A Parcel Just For You</h1>
+        <p class="stage-subtitle">Pull the tab across to open your birthday box ♡</p>
+
+        <div class="parcel-container">
+            <div class="parcel-box" id="parcelBox">
+                <div class="box-interior-glow"></div>
+                <div class="box-lid"></div>
+
+                <div class="tear-strip-track" id="tearTrack">
+                    <div class="tear-strip-peel" id="tearStrip">
+                        <div class="pull-tab" id="pullTab">← PULL</div>
+                    </div>
+                </div>
+
+                <div class="box-body"></div>
+            </div>
+        </div>
+
+        <div class="drag-hint" id="dragHint">Drag the tab left (or tap it) to peel open!</div>
+    </section>
+
+    <!-- STAGE 2: DASHBOARD -->
+    <main class="goodies-dashboard" id="goodiesDashboard">
+        <header class="dashboard-header">
+            <h1>Happy Birthday! 🎉</h1>
+            <p>Everything inside this little box was put together just for you.</p>
+        </header>
+
+        <!-- 1. Letters (Photos Only) -->
+        <section class="section-block" id="lettersSection">
+            <h2 class="section-title">Letters</h2>
+            <div class="envelopes-grid" id="envelopesGrid"></div>
+        </section>
+
+        <!-- 2. Birthday Mixtape -->
+        <section class="section-block">
+            <h2 class="section-title">Soundtrack</h2>
+            <div class="cd-player-card">
+                <div class="cd-disc-wrapper">
+                    <div class="cd-disc" id="cdDisc">
+                        <div class="cd-hole"></div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="tracklist" id="tracklist"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Letter Reading Modal -->
+    <div class="letter-modal-backdrop" id="letterModal">
+        <div class="letter-paper">
+            <button class="close-letter" id="closeLetterBtn">✕</button>
+            <div class="letter-from" id="modalHeaderTitle">A Letter For You ♡</div>
+            
+            <div class="modal-photo-container" id="modalPhotoContainer" style="display: none;">
+                <img id="modalPhoto" src="" alt="Attached Memory" class="modal-attached-img" />
+            </div>
+
+            <div class="letter-body" id="modalMessage"></div>
+            <div class="letter-signoff" id="modalSignoff"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="parcel2.js"></script>
+</body>
+</html>
