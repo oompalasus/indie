@@ -86,7 +86,7 @@ giftBox.addEventListener('click', () => {
 
 yesBtn.addEventListener('click', () => {
     modalBackdrop.classList.remove('active');
-    window.location.href = 'parcel.html';
+    window.location.href = 'parcel2.html';
 });
 
 noBtn.addEventListener('mouseenter', () => {
